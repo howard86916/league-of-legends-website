@@ -1,0 +1,235 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Runeterra Codex</title>
+  <meta name="description" content="A fan-made introduction to League of Legends and every champion on the Rift.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="brand">Runeterra <span>Codex</span></a>
+    <nav>
+      <a href="#about">The Game</a>
+      <a href="#roles">Roles</a>
+      <a href="#rift">The Rift</a>
+      <a href="#champions">Champions</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Welcome, Summoner</p>
+        <h1>League of Legends</h1>
+        <p class="lead">A team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from <strong id="champCountHero">170+</strong> champions, make epic plays, and claim victory.</p>
+        <div class="hero-actions">
+          <a href="#champions" class="btn btn-gold">Explore Champions</a>
+          <a href="#about" class="btn btn-ghost">How to Play</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">The Game</p>
+        <h2>What is League of Legends?</h2>
+        <p class="section-lead">Released by Riot Games in 2009, League of Legends is a free-to-play MOBA (Multiplayer Online Battle Arena) and one of the most played PC games in the world. Each match is a fresh start: every player begins at level 1, earns gold, buys items, and grows stronger over roughly 25–35 minutes.</p>
+
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num">5v5</span><span class="stat-label">Team battles</span></div>
+          <div class="stat"><span class="stat-num" id="champCountStat">170+</span><span class="stat-label">Champions</span></div>
+          <div class="stat"><span class="stat-num">2009</span><span class="stat-label">Released</span></div>
+          <div class="stat"><span class="stat-num">~30<small>min</small></span><span class="stat-label">Average match</span></div>
+        </div>
+
+        <div class="cards-3">
+          <article class="info-card">
+            <div class="info-icon">⚔️</div>
+            <h3>Pick a Champion</h3>
+            <p>Each champion has a unique passive and four abilities (Q, W, E and an ultimate on R). Mastering their kit is the heart of the game.</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">💰</div>
+            <h3>Farm &amp; Build</h3>
+            <p>Defeat minions and monsters to earn gold and experience. Spend gold on items that shape how your champion fights.</p>
+          </article>
+          <article class="info-card">
+            <div class="info-icon">🏰</div>
+            <h3>Destroy the Nexus</h3>
+            <p>Push through the enemy's turrets and inhibitors with your team. The first team to destroy the opposing Nexus wins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLES -->
+    <section class="section alt" id="roles">
+      <div class="container">
+        <p class="eyebrow">Positions</p>
+        <h2>The Five Roles</h2>
+        <p class="section-lead">On Summoner's Rift, each player on a team usually takes one position.</p>
+        <div class="roles-grid">
+          <article class="role-card"><h3>Top</h3><p>Durable fighters and tanks who duel on the long top lane, often holding their own in isolation and teleporting into fights.</p></article>
+          <article class="role-card"><h3>Jungle</h3><p>Roams between lanes, clears neutral camps, secures dragons and Baron, and sets up ambushes ("ganks").</p></article>
+          <article class="role-card"><h3>Mid</h3><p>The central lane. Often mages and assassins who deal burst damage and can quickly help either side of the map.</p></article>
+          <article class="role-card"><h3>Bot (ADC)</h3><p>Ranged marksmen who deal steady damage. Weak early but become a team's main damage source late in the game.</p></article>
+          <article class="role-card"><h3>Support</h3><p>Protects the ADC, places wards for vision, and enables teammates with heals, shields and crowd control.</p></article>
+        </div>
+
+        <h3 class="sub-h">Champion Classes</h3>
+        <div class="class-grid">
+          <div class="class-chip"><b>Assassin</b><span>Burst down key targets fast</span></div>
+          <div class="class-chip"><b>Fighter</b><span>Balanced damage and toughness</span></div>
+          <div class="class-chip"><b>Mage</b><span>Powerful magic spells and control</span></div>
+          <div class="class-chip"><b>Marksman</b><span>Sustained ranged damage</span></div>
+          <div class="class-chip"><b>Support</b><span>Heal, shield and enable allies</span></div>
+          <div class="class-chip"><b>Tank</b><span>Absorb damage and start fights</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIFT -->
+    <section class="section" id="rift">
+      <div class="container rift-layout">
+        <div>
+          <p class="eyebrow">The Map</p>
+          <h2>Summoner's Rift</h2>
+          <p class="section-lead">The main battleground. Three lanes connect the two bases, separated by a jungle full of neutral monsters and a river that cuts the map in half.</p>
+          <ul class="objective-list">
+            <li><b>Turrets</b> defend each lane and deal heavy damage to champions that dive them.</li>
+            <li><b>Inhibitors</b>: destroying one makes the enemy spawn powerful super minions.</li>
+            <li><b>Dragons</b> grant permanent team-wide bonuses; four earn the Dragon Soul.</li>
+            <li><b>Rift Herald &amp; Voidgrubs</b> help teams crack open turrets.</li>
+            <li><b>Baron Nashor</b> empowers the whole team to push for the win.</li>
+          </ul>
+        </div>
+        <figure class="rift-figure">
+          <div class="rift-map">
+            <img src="images/summoners-rift.png" alt="Summoner's Rift minimap: blue base bottom-left, red base top-right, three lanes and a river through the jungle">
+            <svg viewBox="0 0 512 512" aria-hidden="true">
+              <defs>
+                <g id="turret"><path d="M0 -9 L7 0 L0 9 L-7 0 Z"/></g>
+              </defs>
+
+              <!-- Blue team turrets (outer, inner, inhibitor) -->
+              <g class="turret blue">
+                <use href="#turret" x="62" y="150"><title>Blue top outer turret</title></use>
+                <use href="#turret" x="62" y="262"><title>Blue top inner turret</title></use>
+                <use href="#turret" x="62" y="335"><title>Blue top inhibitor turret</title></use>
+                <use href="#turret" x="228" y="284"><title>Blue mid outer turret</title></use>
+                <use href="#turret" x="192" y="320"><title>Blue mid inner turret</title></use>
+                <use href="#turret" x="150" y="362"><title>Blue mid inhibitor turret</title></use>
+                <use href="#turret" x="362" y="450"><title>Blue bot outer turret</title></use>
+                <use href="#turret" x="250" y="450"><title>Blue bot inner turret</title></use>
+                <use href="#turret" x="177" y="450"><title>Blue bot inhibitor turret</title></use>
+              </g>
+              <!-- Red team turrets (mirrored) -->
+              <g class="turret red">
+                <use href="#turret" x="450" y="362"><title>Red bot outer turret</title></use>
+                <use href="#turret" x="450" y="250"><title>Red bot inner turret</title></use>
+                <use href="#turret" x="450" y="177"><title>Red bot inhibitor turret</title></use>
+                <use href="#turret" x="284" y="228"><title>Red mid outer turret</title></use>
+                <use href="#turret" x="320" y="192"><title>Red mid inner turret</title></use>
+                <use href="#turret" x="362" y="150"><title>Red mid inhibitor turret</title></use>
+                <use href="#turret" x="150" y="62"><title>Red top outer turret</title></use>
+                <use href="#turret" x="262" y="62"><title>Red top inner turret</title></use>
+                <use href="#turret" x="335" y="62"><title>Red top inhibitor turret</title></use>
+              </g>
+
+              <!-- Nexuses -->
+              <circle cx="26" cy="486" r="15" class="nexus blue"><title>Blue Nexus</title></circle>
+              <circle cx="486" cy="26" r="15" class="nexus red"><title>Red Nexus</title></circle>
+
+              <!-- Epic monsters -->
+              <g class="epic baron"><circle cx="165" cy="148" r="15"/><text x="165" y="154">B</text><title>Baron Nashor</title></g>
+              <g class="epic dragon"><circle cx="345" cy="360" r="15"/><text x="345" y="366">D</text><title>Elemental Dragon</title></g>
+
+              <!-- Labels -->
+              <text x="165" y="186" class="map-label">BARON</text>
+              <text x="345" y="398" class="map-label">DRAGON</text>
+              <text x="28" y="210" class="map-label lane" transform="rotate(-90 28 210)">TOP LANE</text>
+              <text x="244" y="244" class="map-label lane" transform="rotate(-45 244 244)">MID LANE</text>
+              <text x="305" y="492" class="map-label lane">BOT LANE</text>
+              <text x="120" y="230" class="map-label soft">JUNGLE</text>
+              <text x="392" y="290" class="map-label soft">JUNGLE</text>
+            </svg>
+          </div>
+          <figcaption class="map-legend">
+            <span><i class="lg lg-blue"></i>Blue team</span>
+            <span><i class="lg lg-red"></i>Red team</span>
+            <span><i class="lg lg-turret"></i>Turret</span>
+            <span><i class="lg lg-baron"></i>Baron</span>
+            <span><i class="lg lg-dragon"></i>Dragon</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CHAMPIONS -->
+    <section class="section alt" id="champions">
+      <div class="container">
+        <p class="eyebrow">The Roster</p>
+        <h2>All Champions</h2>
+        <p class="section-lead">Live data from Riot's Data Dragon, patch <span id="patch">…</span>. Click any champion for their lore, abilities, stats and skins.</p>
+
+        <div class="toolbar">
+          <input id="search" type="search" placeholder="Search champions…" aria-label="Search champions">
+          <div class="filters" id="filters" role="group" aria-label="Filter by class">
+            <button class="chip active" data-tag="All">All</button>
+            <button class="chip" data-tag="Assassin">Assassin</button>
+            <button class="chip" data-tag="Fighter">Fighter</button>
+            <button class="chip" data-tag="Mage">Mage</button>
+            <button class="chip" data-tag="Marksman">Marksman</button>
+            <button class="chip" data-tag="Support">Support</button>
+            <button class="chip" data-tag="Tank">Tank</button>
+          </div>
+          <select id="sort" aria-label="Sort champions">
+            <option value="name">Name A–Z</option>
+            <option value="name-desc">Name Z–A</option>
+            <option value="diff-asc">Easiest first</option>
+            <option value="diff-desc">Hardest first</option>
+          </select>
+        </div>
+        <p class="result-count" id="resultCount"></p>
+
+        <div class="champ-grid" id="grid">
+          <p class="loading">Summoning champions…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="mName">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-hero" id="mHero">
+        <button class="skin-nav prev" id="skinPrev" aria-label="Previous skin">‹</button>
+        <button class="skin-nav next" id="skinNext" aria-label="Next skin">›</button>
+        <div class="modal-hero-text">
+          <p class="m-title" id="mTitle"></p>
+          <h2 id="mName"></h2>
+          <div class="m-tags" id="mTags"></div>
+          <p class="skin-name" id="mSkin"></p>
+        </div>
+      </div>
+      <div class="modal-body" id="mBody"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Runeterra Codex is a fan-made project and isn't endorsed by Riot Games. League of Legends and all associated properties are trademarks or registered trademarks of Riot Games, Inc. Champion data and art served from Riot's Data Dragon.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
